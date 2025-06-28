@@ -15,7 +15,8 @@ Get a quick look at Secure Clip's real-time, secure clipboard management feature
 
 ### 📊 Dashboard Overview
 
-![Dashboard](./dash.png)
+![Dashboard](./team.png)
+
 
 ---
 
@@ -33,11 +34,11 @@ Get a quick look at Secure Clip's real-time, secure clipboard management feature
 
 ### 👥 Team & Role Management
 
-![Team Management](./team.png)
+![Team Dashboard](./dash.png)
 
 ---
 
-### 📁 GitHub Repository Structure
+### 🧠 AI based Analysis
 
 ![Repo](./repo.png)
 

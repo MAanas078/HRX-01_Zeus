@@ -8,7 +8,6 @@ import os
 from typing import Dict, List, Any
 from user_agents import parse as parse_user_agent
 from flask_socketio import SocketIO, emit, join_room
-
 app = Flask(__name__)
 CORS(app, origins=["http://localhost:8080", "http://localhost:3000", "http://localhost:5173"])
 socketio = SocketIO(app, cors_allowed_origins="*")

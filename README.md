@@ -42,58 +42,62 @@ Tired of unmonitored clipboard data leaks and risky pasting behavior?
 - 🧰 Domain-based filtering and application controls  
 - 🧪 Paste validation with policy enforcement  
 
-## 💥 Overall Architecture Vision:
-secure-clip/
-├── backend/                             # 🧠 Python Flask Backend
-│   ├── app.py                           # Main entrypoint
-│   ├── config.py                        # Firebase, API keys, constants
-│   ├── controllers/
-│   │   ├── auth_controller.py           # Login, register, role-based auth
-│   │   ├── clipboard_controller.py      # Upload, sync, retrieve clipboard
-│   │   ├── ai_controller.py             # OpenAI content analysis
-│   │   ├── device_controller.py         # Device auth & fingerprinting
-│   │   └── logs_controller.py           # Audit logs, tamper-proof storage
-│   ├── services/
-│   │   ├── firebase_service.py          # Firebase DB and auth setup
-│   │   ├── encryption_service.py        # AES/RSA hybrid encryption logic
-│   │   ├── policy_service.py            # Domain whitelisting/blacklisting
-│   ├── utils/
-│   │   ├── auth_utils.py                # Token validators, decorators
-│   │   ├── logger.py                    # Activity + error logging
-│   ├── requirements.txt
-│   └── credential.json                  # 🔐 Firebase service account key
+## 🏗️ Project Architecture
 
-├── frontend/                            # 💻 React + TypeScript Frontend
-│   ├── public/
-│   ├── src/
-│   │   ├── App.tsx
-│   │   ├── index.tsx
-│   │   ├── components/
-│   │   │   ├── ui/                      # ShadCN / UI kit components
-│   │   │   ├── AppSidebar.tsx
-│   │   │   ├── ClipboardDashboard.tsx
-│   │   │   ├── ClipboardScanner.tsx
-│   │   │   ├── ContentAnalyzer.tsx
-│   │   │   ├── RealTimeDashboard.tsx
-│   │   │   ├── SecurityMetrics.tsx
-│   │   │   ├── TeamManagement.tsx
-│   │   │   └── ...                      # all other .tsx you shared
-│   │   ├── pages/
-│   │   │   ├── Dashboard.tsx
-│   │   │   ├── Login.tsx
-│   │   │   └── Settings.tsx
-│   │   ├── services/
-│   │   │   ├── api.ts                   # Axios base
-│   │   │   ├── clipboard.ts             # Flask API calls
-│   │   │   └── auth.ts
-│   │   ├── context/                     # Role context, user session
-│   │   ├── hooks/
-│   │   └── utils/
-│   ├── .env
-│   ├── package.json
-│   └── tailwind.config.js
-├── .env                                 # Backend/Frontend env vars
-├── README.md                            # 📝 Project overview
+The system is structured into three main layers:
+
+---
+
+### 🧠 Backend — `backend/`
+
+- **`app.py`** – Main Flask entry point  
+- **`config.py`** – Firebase and API key setup  
+- **`controllers/`** – Route handlers  
+  - `auth_controller.py` – Login, registration, role-based auth  
+  - `clipboard_controller.py` – Clipboard sync APIs  
+  - `ai_controller.py` – OpenAI content analysis  
+  - `device_controller.py` – Device authentication and fingerprinting  
+  - `logs_controller.py` – Audit logs and tracking  
+- **`services/`** – Business logic layer  
+  - `firebase_service.py` – Firebase DB/auth setup  
+  - `encryption_service.py` – AES + RSA hybrid logic  
+  - `policy_service.py` – Domain/app rule enforcement  
+- **`utils/`** – Reusable utilities  
+  - `auth_utils.py` – Token checkers, decorators  
+  - `logger.py` – Activity/event logging  
+- **`credential.json`** – 🔐 Firebase service account key  
+- **`requirements.txt`** – Python dependencies  
+
+---
+
+### 💻 Frontend — `frontend/`
+
+- **`public/`** – Static assets  
+- **`src/`** – Core React + TS code  
+  - `App.tsx` – App entry point  
+  - `index.tsx` – ReactDOM root render  
+  - **`components/`** – UI Components  
+    - `AppSidebar.tsx`, `ClipboardDashboard.tsx`, `ContentAnalyzer.tsx`, etc.  
+    - `ui/` – ShadCN & custom design components  
+  - **`pages/`** – Route-level UIs  
+    - `Dashboard.tsx`, `Login.tsx`, `Settings.tsx`  
+  - **`services/`** – API handlers  
+    - `api.ts`, `auth.ts`, `clipboard.ts`  
+  - **`context/`** – Global state (user, auth)  
+  - **`hooks/`** – Custom React hooks  
+  - **`utils/`** – Helper functions  
+- **`.env`** – Frontend environment vars  
+- **`tailwind.config.js`** – Tailwind setup  
+- **`package.json`** – Frontend dependencies  
+
+---
+
+### 🌐 Root Project
+
+- **`.env`** – Global environment vars  
+- **`README.md`** – 📄 Project guide and documentation  
+
+
 
 ## 🚀 System Overview
 

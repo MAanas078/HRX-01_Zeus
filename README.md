@@ -17,6 +17,13 @@ Get a quick look at Secure Clip's real-time, secure clipboard management feature
 
 ![Dashboard](./team.png)
 
+---
+
+# 🔑 Key Management Panel
+
+Efficiently manage cryptographic keys for secure clipboard syncing 🔐
+
+![Key Management](./3970519c-7770-4ec0-a67b-51d34088a9c1.png)
 
 ---
 

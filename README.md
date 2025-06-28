@@ -7,6 +7,39 @@ A full-stack, enterprise-grade clipboard management system for 🔒 secure synch
 
 Tired of unmonitored clipboard data leaks and risky pasting behavior?  
 **Secure Clip** ensures intelligent sync, protection, and full visibility — for teams that care about security.
+## 🖼️ UI Screenshots
+
+Get a quick look at Secure Clip's real-time, secure clipboard management features 👇
+
+---
+
+### 📊 Dashboard Overview
+
+![Dashboard](./dash.png)
+
+---
+
+### 🔐 Security & Policy View
+
+![Security](./sec.png)
+
+---
+
+### 🧠 Clipboard Content Analysis (AI)
+
+![Content Analysis](./analysis.png)
+
+---
+
+### 👥 Team & Role Management
+
+![Team Management](./team.png)
+
+---
+
+### 📁 GitHub Repository Structure
+
+![Repo](./repo.png)
 
  
 ## ✨ Features

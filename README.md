@@ -216,7 +216,7 @@ python app.py --> backend running at  http://localhost:5000
 
 ## Send Snippet Feature
 
-![Send Snippet](./sendsnippet.gif)  
+![Send Snippet](./snippetSend.gif)  
 *Clicking the send snippet button copies the selected code.*
 
 

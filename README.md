@@ -209,6 +209,23 @@ npm run db:push
 python app.py --> backend running at  http://localhost:5000
 
 --
+
+# 🚀 CoolX for VSCode
+
+🔐 CoolX is a quick and easy file sharing tool built with privacy in mind.  
+It is a Visual Studio Code Extension that allows you to securely transfer files and snippets — without leaving your editor.
+
+--
+
+## ✨ Features
+
+- ⚙️ **Easy Setup**: Integrates seamlessly into any VS Code environment
+- 🔗 **Peer-to-Peer**: No server in between – full privacy
+- 📁 **Any File Format**: Send `.zip`, `.env`, or even entire folders
+- ✂️ **Selective Snippets**: Share selected blocks of code
+- 🔐 **Connection Approval**: Receiver approves request after verifying sender
+
+---
 ## Extension Demo
 
 ![Demo](./demo.gif)  

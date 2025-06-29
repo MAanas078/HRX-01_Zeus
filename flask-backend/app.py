@@ -13,8 +13,7 @@ CORS(app, origins=["http://localhost:8080", "http://localhost:3000", "http://loc
 socketio = SocketIO(app, cors_allowed_origins="*")
 
 # Set OpenAI API key
-openai.api_key = ""
-
+openai.api_key = "your APi key"
 # In-memory storage (replace with real database in production)
 users_db = {}
 devices_db = {}
@@ -39,7 +38,6 @@ def get_current_user():
 @app.route('/api/health', methods=['GET'])
 def health_check():
     return jsonify({"status": "healthy", "version": "1.0.0"})
-
 
 
 # Authentication endpoints

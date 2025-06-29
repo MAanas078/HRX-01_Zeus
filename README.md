@@ -207,6 +207,17 @@ npm run db:push
 > Now start the Backend Server
 python app.py --> backend running at  http://localhost:5000
 
+--
+## Extension Demo
+
+![Demo](demo.gif)  
+*This shows how the app works.*
+
+## Send Snippet Feature
+
+![Send Snippet](sendsnippet.gif)  
+*Clicking the send snippet button copies the selected code.*
+
 
 
 

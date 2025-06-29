@@ -189,6 +189,7 @@ Follow these steps to set up and run the project locally:
 ```bash
 git clone <repository-url>
 cd secure-clip
+```
 
 Install Dependencies
 npm install ---> frontend is running on http://localhost:8080/
@@ -210,12 +211,12 @@ python app.py --> backend running at  http://localhost:5000
 --
 ## Extension Demo
 
-![Demo](demo.gif)  
+![Demo](./demo.gif)  
 *This shows how the app works.*
 
 ## Send Snippet Feature
 
-![Send Snippet](sendsnippet.gif)  
+![Send Snippet](./sendsnippet.gif)  
 *Clicking the send snippet button copies the selected code.*
 
 

@@ -131,7 +131,6 @@ export function AppSidebar({ activeView, setActiveView }: AppSidebarProps) {
             </SidebarMenu>
           </SidebarGroupContent>
         </SidebarGroup>
-        
         <SidebarGroup>
           <SidebarGroupLabel>Flask Backend</SidebarGroupLabel>
           <SidebarGroupContent>

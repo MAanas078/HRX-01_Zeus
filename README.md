@@ -19,7 +19,7 @@ Get a quick look at Secure Clip's real-time, secure clipboard management feature
 
 ---
 
-# 🔑 Key Management Panel
+# 🔑 Encryption Test
 
 Efficiently manage cryptographic keys for secure clipboard syncing 🔐
 
